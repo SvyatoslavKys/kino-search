@@ -119,6 +119,9 @@
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg, #f1f452, #7b7ffe, #3f8ffe);
     background-size: 200% 100%;
+    margin-right: 10px;
+    user-select: none;
+    cursor: pointer;
 }
 @keyframes moveNavLink {
     0% {
@@ -138,13 +141,17 @@
     width: 240px;
     margin: 10px;
     overflow: hidden;
+   
 }
 .movie__cover--inner{
     position: relative;
+    object-fit: cover;
+    
 }
 .movie__cover{
     max-width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .movie__cover--darkened{
     background: black;
@@ -152,7 +159,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     z-index: 1;
 }
@@ -191,3 +198,50 @@
 .movie__average--red{
     border: 2px solid red;
 }
+/* ------------------film page------------------- */
+
+.movie-details img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .movie-details {
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .back-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .movie {
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .movie-details {
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .back-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
