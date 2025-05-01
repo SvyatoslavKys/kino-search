@@ -126,10 +126,10 @@ function getVideoEmbed(videos) {
 
   if (video.site === "YOUTUBE") {
     const videoId = new URL(video.url).searchParams.get("v");
-    return `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+    return `<iframe width="300" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
   }
 
-  return `<iframe width="560" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>`;
+  return `<iframe width="300" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>`;
 }
 
 const form = document.querySelector("form");
